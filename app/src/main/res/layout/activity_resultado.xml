@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_resultado"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#FFFFCC"
+    tools:context="com.example.yawar.historypet.Resultado">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Mascota 1"
+                android:id="@+id/mas"
+                android:layout_gravity="center"
+                android:background="#78909C"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seleccione Fecha de Inicio del Tratamiento"
+                android:layout_marginTop="20dp"
+                android:textColor="#1A237E"
+                />
+            <DatePicker
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_marginTop="10dp">
+
+            </DatePicker>
+            <Button
+                android:id="@+id/cupla"
+                android:layout_width="200dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white"
+                android:text="Curado en plazo"
+                android:onClick="cura"
+                android:background="#1565C0"/>
+            <Button
+                android:layout_width="200dp"
+                android:id="@+id/tramp"
+                android:onClick="ampliar"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/white"
+                android:text="Ampliar tratamiento"
+                android:background="#1565C0"
+                android:layout_gravity="center"/>
+            <Button
+                android:layout_width="200dp"
+                android:id="@+id/tramo"
+                android:onClick="modificar"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Tratamiento Modificado"
+                android:textColor="@android:color/white"
+                android:background="#1565C0"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

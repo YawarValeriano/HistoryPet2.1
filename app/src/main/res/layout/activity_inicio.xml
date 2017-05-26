@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#325688"
+    android:padding="16dp"
+    tools:context="com.example.yawar.historypet.Inicio">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_weight="3"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo2"
+        android:id="@+id/imageView"
+        android:layout_height="0dp" />
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:hint="Correo electrónico"
+        android:textColorHint="#FFF"
+        android:textColor="#FFF"
+        android:inputType="textEmailAddress"
+        android:theme="@style/InputLine"
+        android:layout_height="0dp" />
+
+    <EditText
+        android:id="@+id/contraseña"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:hint="Contraseña"
+        android:textColorHint="#FFF"
+        android:textColor="#FFF"
+        android:inputType="textPassword"
+        android:theme="@style/InputLine"
+        android:layout_height="0dp" />
+
+    <Button
+        android:text="Entrar"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="#5486B8"
+        android:textColor="#FFF"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/button"
+        android:layout_height="0dp"
+        android:onClick="inicio"/>
+
+    <TextView
+        android:id="@+id/crearUser"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:gravity=""
+        android:text="Crear una cuenta"
+        android:textColor="@android:color/white"
+        android:onClick="crear"
+        android:clickable="true"/>
+
+</LinearLayout>

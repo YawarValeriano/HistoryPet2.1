@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_entrar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#FFFFCC"
+    tools:context="com.example.yawar.historypet.Entrar">
+    <HorizontalScrollView
+        android:id="@+id/hsv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/linear_layout_tags"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/circle"
+                android:src="@drawable/profile"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:onClick="cambiarNom"/>
+
+            <ImageButton
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/circle"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:src="@drawable/profile"
+                android:onClick="cambiarNom"/>
+
+            <ImageButton
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/circle"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:src="@drawable/profile"
+                android:onClick="cambiarNom"/>
+
+            <ImageButton
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/circle"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:src="@drawable/profile"
+                android:onClick="cambiarNom"/>
+
+            <ImageButton
+                android:id="@+id/button5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/circle"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:src="@drawable/add"
+                android:onClick="add"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Mascota 1"
+        android:id="@+id/cam"
+        android:layout_gravity="center"
+        android:background="#78909C"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:id="@+id/contenido"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="5dp"
+            android:layout_weight="7"
+            android:columnCount="2"
+            android:rowCount="4">
+            <ImageButton
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:id="@+id/datb"
+                android:background="@android:color/transparent"
+                android:onClick="datos"
+                android:scaleType="centerCrop"
+                android:src="@drawable/res" />
+            <ImageButton
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:id="@+id/res"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent"
+                android:onClick="reserva"
+                android:src="@drawable/reser" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"                android:text="DATOS BÁSICOS"
+                android:textColor="@android:color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"                android:text="RESERVA"
+                android:textColor="@android:color/black" />
+            <ImageButton
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:id="@+id/tra"
+                android:scaleType="centerCrop"
+                android:background="@android:color/transparent"
+                android:onClick="trata"
+                android:src="@drawable/tra"/>
+            <ImageButton
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_margin="5dp"
+                android:id="@+id/resu"
+                android:background="@android:color/transparent"
+                android:onClick="resul"
+                android:scaleType="centerCrop"
+                android:src="@drawable/resu" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="TRATAMIENTO"
+                android:textColor="@android:color/black" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="RESULTADO"
+                android:textColor="@android:color/black" />
+        </GridLayout>
+        <Button
+            android:id="@+id/sal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="#FFE082"
+            android:onClick="exit"
+            android:text="Salir" />
+    </LinearLayout>
+</LinearLayout>

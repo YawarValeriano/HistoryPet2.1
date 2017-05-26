@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#325688"
+    android:padding="16dp"
+    tools:context="com.example.yawar.historypet.Registro">
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:hint="Nombre"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:inputType="text"
+        android:theme="@style/InputLine"
+        android:layout_height="0dp" />
+
+    <EditText
+        android:id="@+id/apellido"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:hint="Apellidos"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:inputType="text"
+        android:theme="@style/InputLine"
+        android:layout_height="0dp" />
+
+    <EditText
+        android:id="@+id/correo"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:hint="Correo electrónico"
+        android:textColorHint="#FFF"
+        android:textColor="#FFF"
+        android:inputType="textEmailAddress"
+        android:theme="@style/InputLine"
+        android:layout_height="0dp" />
+    <EditText
+        android:id="@+id/contraseña1"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:hint="Contraseña"
+        android:textColor="#FFF"
+        android:textColorHint="#FFF"
+        android:inputType="textPassword"
+        android:theme="@style/InputLine"
+        android:layout_height="0dp" />
+
+    <EditText
+        android:id="@+id/contraseña2"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:hint="Repita contraseña"
+        android:textColorHint="#FFF"
+        android:textColor="#FFF"
+        android:inputType="textPassword"
+        android:theme="@style/InputLine"
+        android:layout_height="0dp" />
+
+    <Button
+        android:text="registrar"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:backgroundTint="#5486B8"
+        android:textColor="#FFF"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="60dp"
+        android:id="@+id/button"
+        android:layout_height="0dp"
+        android:onClick="registrar"/>
+
+</LinearLayout>

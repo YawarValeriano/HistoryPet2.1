@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tratamiento"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#FFFFCC"
+    tools:context="com.example.yawar.historypet.Tratamiento">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+            <TextView
+                android:layout_margin="5dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Mascota 1"
+                android:id="@+id/mas"
+                android:layout_gravity="center"
+                android:background="#78909C"
+                android:textColor="@android:color/black"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha de fin de Tratamiento"
+                android:layout_marginTop="10dp"
+                android:textColor="@android:color/black"/>
+            <DatePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2.11">
+
+            </DatePicker>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre del medicamento"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spi"></Spinner>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Listo"
+                android:id="@+id/lis"
+                android:onClick="done"
+                android:textColor="@android:color/white"
+                android:background="#1A237E"
+                android:gravity="center"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
